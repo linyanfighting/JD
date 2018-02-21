@@ -1,0 +1,14 @@
+/*
+* @Author: linyan
+* @Date:   2018-02-21 12:39:23
+* @Last Modified by:   linyan
+* @Last Modified time: 2018-02-21 12:43:56
+*/
+
+@charset "UTF-8";
+
+@mixin flex($direction:column,$inline:block) {
+	display: if($inline==block,flex,inline-flex);
+	flex-direction: $direction;
+	flex-wrap: wrap;
+}
