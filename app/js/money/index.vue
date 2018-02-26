@@ -2,12 +2,12 @@
     <div>
         <Heador/>
         <Slider/>
-        <Novice/>
-        <Borrow/>
+        <Ada/>
         <Money/>
-        <Product/>
-        <Services/>
-        <Footers/>
+        <Adb/>
+        <Finance/>
+        <Adc/>
+        <Footers cname="mfooter"/>
         <Navbar/>
     </div>
 </template>
@@ -16,25 +16,36 @@
 import Heador from '../public/header.vue'
 import Footers from '../public/footer.vue'
 import Navbar from '../public/navbar.vue'
-import Slider from './hslide.vue'
-import Novice from './novice.vue'
-import Borrow from './borrow.vue'
+import Slider from './mslide.vue'
+import Ada from './ada.vue'
 import Money from './money.vue'
-import Product from './product.vue'
-import Services from './services.vue'
+import Adb from './adb.vue'
+import Finance from './finance.vue'
+import Adc from './adc.vue'
+
 export default {
 	components:{
 		Heador,
 		Slider,
-		Novice,
-		Borrow,
+		Ada,
 		Money,
-		Product,
-		Services,
+		Adb,
+		Finance,
+		Adc,
 		Footers,
 		Navbar
 	}
 }
 </script>
+
+<style lang="scss">
+	.mfooter{
+		ul{
+			li:first-child{
+				display:none;
+			}
+		}
+	}
+</style>
 
 
